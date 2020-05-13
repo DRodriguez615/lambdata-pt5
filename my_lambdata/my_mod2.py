@@ -2,8 +2,6 @@
 # my_lambdata/my_mod2.py
 import pandas as pd
 
-#
-
 
 def check_nulls(df):
     """

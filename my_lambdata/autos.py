@@ -1,5 +1,6 @@
 # autos.py
 
+
 class Auto():
     def __init__(self, make, model, year, color, num_wheels):
         self.make = make
@@ -9,10 +10,11 @@ class Auto():
         self.num_wheels = num_wheels
 
     def wash(self):
-        print("WASHING THE CAR")    
+        print("WASHING THE CAR")
 
     def drive(self):
         print("WE ARE DRIVING", self.model)
+
 
 class Truck(Auto):
     def __init__(self, make, model, year, color, num_wheels, bed_size=None):
@@ -21,6 +23,7 @@ class Truck(Auto):
 
     def drive(self):
         print("WE ARE DRIVING", self.model, "WITH BED SIZE:", self.bed_size)
+
 
 if __name__ == "__main__":
     car = Auto("Toyota", "Prius", 2020, "Blue", 4)

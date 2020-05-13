@@ -6,6 +6,8 @@ verify_ssl = true
 [dev-packages]
 pylint = "*"
 twine = "*"
+ipykernel = "*"
+autopep8 = "*"
 
 [packages]
 pandas = "*"

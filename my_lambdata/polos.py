@@ -6,7 +6,6 @@ class Polo:
         self.color = color
         self.price = price
 
-
     def wash(self):
         print(f"WASHING THE {self.size.upper()} {self.color.upper()} POLO!")
 
