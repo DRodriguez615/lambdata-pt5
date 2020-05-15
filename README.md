@@ -3,13 +3,9 @@
 
 ## Installation
 
-
 ```sh
-pip install -i https://test.pypi.org/simple/ DRodriguez615-lambdata-pt5
-
-# in future maybe:
-#pip install DRodriguez615-lambdata-pt5 
-``` 
+pip install -i https://test.pypi.org/simple/ lambdata-pt5
+```
 
 ## Usage
 
