@@ -14,13 +14,12 @@ class TestAssignment(unittest.TestCase):
 
         df = DataFrame({"abbrev": ["CA", "CO", "CT", "DC", "TX"]})  
         self.assertEqual(list(df.columns), ['abbrev'])
-        
+       
+
         result = add_state_names(df)
         self.assertEqual(list(result.columns), ["abbrev", "name"])
-
-
-        
-
+        self.assertEqual(result.iloc[0]["abbrev"], "CA")
+        self.assertEqual(result.iloc[0]["name"], "Cali")
 
 
 if __name__ == "__main__":
