@@ -10,7 +10,7 @@ class Auto():
         self.num_wheels = num_wheels
 
     def wash(self):
-        print("WASHING THE CAR")
+        print("WASHING THE CAR", self.model)
 
     def drive(self):
         print("WE ARE DRIVING", self.model)
@@ -38,7 +38,9 @@ if __name__ == "__main__":
     truck = Truck("Ford", "F150", 2020, "Blue", 4, bed_size="5x5")
     truck.drive()
     truck.wash()
+    print(truck.bed_size)
 
     truck2 = Truck("Tesla", "Cybertuck", 2020, "Blue", 4, bed_size="6x4")
     truck2.drive()
     truck2.wash()
+    print(truck2.bed_size)
