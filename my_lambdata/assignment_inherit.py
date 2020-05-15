@@ -1,7 +1,6 @@
 
 from pandas import DataFrame
 
-
 class MyFrame(DataFrame):
 
     def add_state_names(self):
