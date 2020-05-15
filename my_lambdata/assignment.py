@@ -16,7 +16,7 @@ def add_state_names(my_df):
     names_map = {"CA": "Cali", "CO": "Colo", "CT": "Conn"}
     # see: https://pandas.pydata.org/pandas-docs/:
     new_df["name"] = new_df["abbrev"].map(names_map)
-    return my_df
+    return new_df
 
 
 if __name__ == "__main__":
@@ -27,7 +27,7 @@ if __name__ == "__main__":
     print(df.head())  # method
 
     df2 = add_state_names(df)
-    print(df2)
+    print(df2.head())
 
     df3 = DataFrame({"a": [1, 2, 3, 4]})
     print(df3.head())
